@@ -8,6 +8,13 @@
     <a href="https://huggingface.co/modelcloud/"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-ModelCloud-%23ff8811.svg"></a>
 </p>
 
+## What is this?
+This is a project I followed during my master's in AI, I tested the GPTQ method on a SLM (Llama-3.2 1B). The results were tested in two main topics: Language modeling and Question answering.
+
+Detailed notebooks can be found in `language_modeling.ipynb` and `question_answering.ipynb`, also check the utility files for more infos -> `utils.py`, `utils_LM.py`, `utils_QA.py`
+
+⚠️ NOTE: This repository is a fork of an already existing repository, which is getting updated daily. If you want to use the latest GPTQ models go check out the [original repository](https://github.com/ModelCloud/GPTQModel) instead.
+
 ## News
 * 12/23/2024 [1.5.0](https://github.com/ModelCloud/GPTQModel/releases/tag/v1.5.0): Multi-modal (image-to-text) optimized quantization support has been added for Qwen 2-VL and Ovis 1.6-VL. Previous image-to-text model quantizations did not use image calibration data, resulting in less than optimal post-quantization results. Version 1.5.0 is the first release to provide a stable path for multi-modal quantization: only text layers are quantized.
 * 12/19/2024 [1.4.5](https://github.com/ModelCloud/GPTQModel/releases/tag/v1.4.5): Windows 11 support added/validated. Ovis VL model support with image dataset calibration. Fixed `dynamic` loading. Reduced quantization vram usage. 
